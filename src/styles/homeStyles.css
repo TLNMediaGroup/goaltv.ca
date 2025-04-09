@@ -1,0 +1,123 @@
+/* src/styles/homeStyles.css */
+
+.home {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* ----------------------------------
+     Video Promotion Section
+  ------------------------------------- */
+  .video-promo {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+  }
+  
+  .video-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .promo-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); /* Darkens video for improved text visibility */
+  }
+  
+  .promo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .promo-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .promo-overlay p {
+    font-size: 1.5rem;
+  }
+  
+  /* ----------------------------------
+     Content Sections
+  ------------------------------------- */
+  .content-section {
+    padding: 2rem;
+    margin: 2rem 0;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .content-section:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* ----------------------------------
+     Animations
+  ------------------------------------- */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ----------------------------------
+     Responsive Breakpoints
+  ------------------------------------- */
+  
+  /* Tablet: max-width 768px */
+  @media (max-width: 768px) {
+    .promo-overlay h1 {
+      font-size: 2.5rem;
+    }
+    .promo-overlay p {
+      font-size: 1.2rem;
+    }
+    .content-section {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Mobile: max-width 580px */
+  @media (max-width: 580px) {
+    .promo-overlay h1 {
+      font-size: 2rem;
+    }
+    .promo-overlay p {
+      font-size: 1rem;
+    }
+    .content-section {
+      padding: 1rem;
+    }
+  }
+  

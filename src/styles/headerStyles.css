@@ -1,0 +1,58 @@
+/* src/styles/headerStyles.css */
+
+.header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    text-decoration: none;
+  }
+  
+  /* Logo image styling */
+  .logo-image {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* -----------------------------------------------------------------
+     Tablet breakpoint: For screens 768px and below
+     ----------------------------------------------------------------- */
+  @media (max-width: 768px) {
+    .header {
+      padding: 0.8rem 1.5rem;
+    }
+    
+    .logo-image {
+      width: 130px; /* Slightly smaller logo on tablets */
+    }
+    
+  }
+  
+  /* -----------------------------------------------------------------
+     Mobile breakpoint: For screens 580px and below
+     ----------------------------------------------------------------- */
+  @media (max-width: 580px) {
+    .header {
+      padding: 0.5rem 1rem;
+    }
+    
+    .container {
+      flex-direction: column;  /* Stack items vertically */
+      align-items: center;       /* Center align items */
+    }
+    
+    .logo-image {
+      width: 100px; /* Further reduce the logo size on mobiles */
+    }
+  }
+  
