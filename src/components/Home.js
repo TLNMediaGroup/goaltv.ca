@@ -3,7 +3,7 @@
 import React from 'react';
 import '../styles/homeStyles.css';
 import Promo from '../assets/Videos/Channel_Promo/euro-promo.mp4'
-import Dictionary from './Dictionary';
+import Carousel from './Carousel';
 
 const Home = () => {
   return (
@@ -27,7 +27,7 @@ const Home = () => {
       <section className="content-section series-section">
         <h2 className="section-title">Series Airing</h2>
         <div className="section-content">
-          <p>Series content will be populated here.</p>
+          <Carousel category="Series"/>
         </div>
       </section>
 
@@ -35,7 +35,7 @@ const Home = () => {
       <section className="content-section specials-section">
         <h2 className="section-title">Specials Airing</h2>
         <div className="section-content">
-          <p>Specials content will be populated here.</p>
+          <Carousel category="Specials"/>
         </div>
       </section>
 
@@ -43,7 +43,7 @@ const Home = () => {
       <section className="content-section original-films-section">
         <h2 className="section-title">TLN Original Productions</h2>
         <div className="section-content">
-          <p>Original production films will be populated here.</p>
+          <Carousel category="TLN Originals"/>
         </div>
       </section>
     </main>
