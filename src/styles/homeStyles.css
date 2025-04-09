@@ -49,23 +49,27 @@
   /* ----------------------------------
      Content Sections
   ------------------------------------- */
-  .content-section {
+  .page-content {
     padding: 2rem;
     margin: 2rem 0;
     opacity: 0;
     animation: fadeInUp 1s forwards;
   }
   
-  .content-section:nth-child(odd) {
+  .page-content:nth-child(odd) {
     background: #f9f9f9;
   }
   
   .section-title {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
   }
   
+  .section-content {
+    max-width: 1920px;
+    margin: auto;
+  }
   /* ----------------------------------
      Animations
   ------------------------------------- */
@@ -103,7 +107,7 @@
     .promo-overlay p {
       font-size: 1.2rem;
     }
-    .content-section {
+    .page-content {
       padding: 1.5rem;
     }
   }
@@ -116,7 +120,7 @@
     .promo-overlay p {
       font-size: 1rem;
     }
-    .content-section {
+    .page-content {
       padding: 1rem;
     }
   }

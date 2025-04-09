@@ -24,26 +24,26 @@ const Home = () => {
       </section>
 
       {/* Series Airing Section */}
-      <section className="content-section series-section">
+      <section className="page-content series-section">
         <h2 className="section-title">Series Airing</h2>
         <div className="section-content">
-          <Carousel category="Series"/>
+        <Carousel category="Series" showType="series" season="S1" />
         </div>
       </section>
 
       {/* Specials Airing Section */}
-      <section className="content-section specials-section">
+      <section className="page-content specials-section">
         <h2 className="section-title">Specials Airing</h2>
         <div className="section-content">
-          <Carousel category="Specials"/>
+        <Carousel category="Specials" showType="film" />
         </div>
       </section>
 
       {/* TLN Originals Section */}
-      <section className="content-section original-films-section">
+      <section className="page-content original-films-section">
         <h2 className="section-title">TLN Original Productions</h2>
         <div className="section-content">
-          <Carousel category="TLN Originals"/>
+          <Carousel category="TLN Originals" showType="film" />
         </div>
       </section>
     </main>

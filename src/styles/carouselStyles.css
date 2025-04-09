@@ -1,0 +1,71 @@
+.collection {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.showCard {
+    position: relative;
+    min-width: calc(25% - 20px);
+    width: calc(25% - 20px);
+}
+.showCard img {
+    width: 100%;
+    box-shadow: 1px 1px 10px 2px grey;
+}
+
+.showTitle {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Hover overlay styling */
+.hoverCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);  /* Semi-transparent dark overlay */
+    color: #fff;
+    opacity: 0;                     /* Hidden by default */
+    transition: opacity 0.3s ease-in-out;  /* Smooth fade-in effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    z-index: 10;
+  }
+
+  /* Show the overlay when the card is hovered */
+.showCard:hover .hoverCard {
+    opacity: 1;
+  }
+  /* Styling for the image in the overlay */
+.hoverImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* Styling for the overlay text information */
+.hoverInfo {
+    text-align: center;
+}
+
+  /* Additional optional styling for series vs. film cards */
+.seriesCard {
+    /* Styles specific to series */
+}
+
+.filmCard {
+    /* Styles specific to films */
+  }
+
+  .showTitle {
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+  }
