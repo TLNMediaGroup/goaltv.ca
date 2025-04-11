@@ -2,8 +2,10 @@
 
 import React from 'react';
 import '../styles/homeStyles.css';
-import Promo from '../assets/Videos/Channel_Promo/Goal-header-promo.mp4'
+import DesktopPromo from '../assets/Videos/Channel_Promo/Goal-Header-Desktop.mp4';
+import MobilePromo from '../assets/Videos/Channel_Promo/Goal-Header-Mobile.mp4';
 import Carousel from './Carousel';
+import NewsletterSection from './Newsletter';
 
 const Home = () => {
   return (
@@ -12,8 +14,12 @@ const Home = () => {
       <section className="video-promo">
         <div className="video-container">
           {/* Replace the video src with your promotional video file */}
-          <video autoPlay loop muted className="promo-video">
-            <source src={Promo} type="video/mp4" />
+          <video autoPlay loop muted className="promo-video desktop-promo">
+            <source src={DesktopPromo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video autoPlay loop muted className="promo-video mobile-promo">
+            <source src={MobilePromo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           {/* <div className="promo-overlay">
@@ -46,6 +52,9 @@ const Home = () => {
           <Carousel category="TLN Originals" showType="film" />
         </div>
       </section>
+
+      {/* Goal Newsletter Section */}
+      <NewsletterSection/>
     </main>
   );
 };

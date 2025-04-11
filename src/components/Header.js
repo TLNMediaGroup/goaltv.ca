@@ -2,7 +2,7 @@
 
 import React from 'react';
 import '../styles/headerStyles.css';
-import logo from '../assets/Logos/goal-logo-rgb.png'
+import logo from '../assets/Logos/goal-logo-color-1-rgb.png';
 
 const Header = () => {
   return (

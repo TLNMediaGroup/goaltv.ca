@@ -1,0 +1,78 @@
+/* Base styles for the newsletter section */
+.newsletter {
+    position: relative;
+    padding: 3rem;
+    text-align: center;
+    background-color: #04533d;
+    
+    /* Initial hidden state */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    overflow: hidden;
+}
+  
+/* Active state: section is visible and in place */
+.newsletter.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+/* Background soccer ball asset */
+img.background-logo {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    max-width: 1300px;
+    filter: drop-shadow(3px 2px 10px black);
+    
+    /* Initial downward state */
+    transform: translateY(100px);
+    transition: transform 0.8s ease-out;
+}
+  
+/* When the newsletter is active, animate the soccer ball to slide up partially */
+.newsletter.active img.background-logo {
+    transform: translateY(-3rem);
+}
+  
+/* Styling for the container */
+.newsletter-container {
+    position: relative;
+    margin: 0 auto;
+    z-index: 2; /* Ensure it sits above the soccer ball */
+}
+  
+/* Styling for the logo */
+.newsletter-logo {
+    max-width: 400px;
+}
+  
+.newsletter-container h2 {
+    margin: 1rem auto;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    color: var(--color-accent);
+}
+  
+/* Styling for the subscribe button */
+.subscribe-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #c7f267;
+    color: #034d37;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--color-accent);
+}

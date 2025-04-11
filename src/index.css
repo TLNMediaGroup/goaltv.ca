@@ -1,3 +1,14 @@
+:root {
+  /* Primary Theme Colors */
+  --color-primary: #7AC71F;
+  --color-primary-light: #C7F169;
+  --color-primary-dark: #033E2C;
+
+  --color-secondary: #033E2C;
+  --color-accent: #EFF3E4;
+}
+
+
 * {
   padding: 0;
   margin: 0;

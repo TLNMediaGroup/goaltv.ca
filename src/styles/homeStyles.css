@@ -26,6 +26,10 @@
     object-fit: cover;
     filter: brightness(0.7); /* Darkens video for improved text visibility */
   }
+
+  .mobile-promo {
+    display: none;
+  }
   
   .promo-overlay {
     position: absolute;
@@ -65,12 +69,14 @@
     font-size: 2rem;
     margin-bottom: 3rem;
     text-align: center;
+    color: #04533d;
   }
   
   .section-content {
     max-width: 1300px;
     margin: auto;
   }
+
   /* ----------------------------------
      Animations
   ------------------------------------- */
@@ -102,6 +108,12 @@
   
   /* Tablet: max-width 768px */
   @media (max-width: 768px) {
+    .desktop-promo {
+      display: none;
+    }
+    .mobile-promo {
+      display: block;
+    }
     .promo-overlay h1 {
       font-size: 2.5rem;
     }
