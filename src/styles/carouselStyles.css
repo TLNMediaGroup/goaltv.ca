@@ -47,6 +47,12 @@
   padding: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.collection::::-webkit-scrollbar {
+  display: none;
 }
 
 /* Show card styles */
