@@ -2,7 +2,7 @@
 
 import React from 'react';
 import '../styles/homeStyles.css';
-import Promo from '../assets/Videos/Channel_Promo/euro-promo.mp4'
+import Promo from '../assets/Videos/Channel_Promo/Goal-header-promo.mp4'
 import Carousel from './Carousel';
 
 const Home = () => {
@@ -16,10 +16,10 @@ const Home = () => {
             <source src={Promo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="promo-overlay">
+          {/* <div className="promo-overlay">
             <h1>Experience the Passion</h1>
             <p>Welcome to Goal</p>
-          </div>
+          </div> */}
         </div>
       </section>
 

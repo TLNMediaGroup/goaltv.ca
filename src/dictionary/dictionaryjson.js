@@ -3,7 +3,7 @@ const dictionary = [{
     "title": "Dark Horses: Italy’s 2006 World Cup Triumph",
     "tag": "",
     "show_time": "Watch on VIVA Streaming TV",
-    "description": "A docuseries that follows the Italian national football team’s spectacular redemption story in 2006, as they came back from the worst scandal in their history to defeat rivals France and win the World Cup.",
+    "description": "A docuseries chronicling Italy’s dramatic 2006 World Cup triumph—rising from the depths of a major scandal to defeat France and reclaim global glory.",
     "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Featured%20Images/Dark_Horses_Featured_1200x800.webp",
     "poster_URL": "https://tln.ca/wp-content/uploads/show-thumbnails/Posters/DarkHorsesS1Poster%20800x1200.webp",
     "trailer": "88ztQdgL",
@@ -53,7 +53,7 @@ const dictionary = [{
     "title": "Moment Of Truth",
     "tag": "",
     "show_time": "Watch on VIVA Streaming TV",
-    "description": "An obsession to billions, Moment of Truth forensically examines iconic stories throughout FIFA World Cup history, providing unique insight through the lens of human endeavor. Players, fans, commentators and world leading psychologists piece together why we care so much about the game, what makes exceptional footballers tick, what lifts an individual and teams to greatness and what it tells us about ourselves.",
+    "description": "Moment of Truth explores iconic FIFA World Cup stories through players, fans, experts, and psychologists—uncovering what drives greatness, why football captivates billions, and what it reveals about human nature.",
     "img_URL": "https://www.tln.ca/wp-content/uploads/2022/10/1200-x-800-2.png",
     "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Soccer/Moment_of_truth_Poster.webp",
     "show_URL": "https://www.tln.ca/shows/moment-of-truth/",
@@ -147,7 +147,7 @@ const dictionary = [{
     "title": "Italia 90: Four Weeks that Changed the World",
     "tag": "",
     "show_time": "Watch on VIVA Streaming TV",
-    "description": "The definitive docuseries on a tournament like no other: the 1990 Italian World Cup. From exploring the end of Maradona’s career, to the commercialization of the game and the geopolitics of new football nations, this series has it all, as well as interviews with icons such as Paul Gascoigne.",
+    "description": "This docuseries dives into the unforgettable 1990 Italian World Cup—covering Maradona’s decline, football’s commercialization, emerging nations, and more, with insights from legends like Paul Gascoigne.",
     "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Featured%20Images/Italia%2090%20-%20Featured%201200x800.webp",
     "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Posters/Italia%2090%20-%20Poster%20800x1200.webp",
     "show_URL": "https://www.tln.ca/shows/italia-90/",
@@ -236,6 +236,23 @@ const dictionary = [{
         }
       }
     }
+  },
+  {
+    "_id": "SOCCER SHRINES",
+    "title": "Soccer Shrines",
+    "tag": "",
+    "show_time": "",
+    "description": "Soccer Shrines is a 13-part Canadian television documentary series about the most famous soccer stadiums in the world and their fans. Stadiums include Old Trafford (Manchester United F.C., United Kingdom), Allianz Arena (FC Bayern Munich, Germany), Amsterdam Arena (AFC Ajax, Netherlands), Parc des Princes (Paris Saint-Germain F.C., France), Camp Nou (FC Barcelona, Spain), Stade Vélodrome (Olympique de Marseille, France), Celtic Park (Celtic F.C., Scotland), Karaiskakis Stadium (Olympiacos F.C., Greece), San Siro (A.C. Milan, Italy), Emirates Stadium (Arsenal F.C., United Kingdom), Loftus Versfeld Stadium (Kaizer Chiefs F.C., South Africa), Estádio do Maracanã (Flamengo, Brazil), La Bombonera (Boca Juniors, Argentina). ",
+    "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Soccer/King-Otto_Featrued_%281200x800%29.webp",
+    "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Soccer/King_Otto_Poster_%28800x1200%29.webp",
+    "show_URL": "",
+    "trailer": "",
+    "category": [
+      "Series"
+    ],
+    "episodic_details": "",
+    "priority": "",
+    "published": true,
   },
   {
     "_id": "SERIE A: Full Impact",

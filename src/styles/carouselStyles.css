@@ -1,71 +1,136 @@
-.collection {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.showCard {
-    position: relative;
-    min-width: calc(25% - 20px);
-    width: calc(25% - 20px);
-}
-.showCard img {
-    width: 100%;
-    box-shadow: 1px 1px 10px 2px grey;
+/* src/styles/carouselStyles.css */
+
+/* Outer carousel container */
+.carousel {
+  position: relative;
+  overflow: visible; /* Allow arrows to be visible */
 }
 
-.showTitle {
-    display: block;
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+/* Navigation arrow buttons */
+.carousel-btn {
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.carousel-btn svg {
+  width: 20px;
+  height: auto;
+}
+
+.carousel-btn svg:hover {
+  filter: contrast(0.7);
+}
+
+.prev-btn {
+  left: -40px;
+}
+
+.next-btn {
+  right: -40px;
+}
+
+/* Wrapper for the scrollable content */
+.collection-wrapper {
+  overflow: hidden; /* Ensures only the .collection scrolls */
+}
+
+/* Scrollable collection */
+.collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* Show card styles */
+
+.seriesCard, .filmCard {
+  position: relative;
+  min-width: calc(25% - 22px);
+  width: calc(25% - 22px);
+}
+
+.showCardImage {
+  width: 100%;
+  box-shadow: 1px 1px 10px 2px grey;
 }
 
 /* Hover overlay styling */
 .hoverCard {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8);  /* Semi-transparent dark overlay */
-    color: #fff;
-    opacity: 0;                     /* Hidden by default */
-    transition: opacity 0.3s ease-in-out;  /* Smooth fade-in effect */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1rem;
-    z-index: 10;
-  }
+  background: #fff;
+  color: #000;
+  box-shadow: 0px 0px 10px 1px black;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
-  /* Show the overlay when the card is hovered */
-.showCard:hover .hoverCard {
-    opacity: 1;
-  }
-  /* Styling for the image in the overlay */
 .hoverImage {
-    width: 100%;
-    height: auto;
-    margin-bottom: 0.5rem;
+  width: 100%;
+  object-fit: cover;
 }
 
-/* Styling for the overlay text information */
 .hoverInfo {
-    text-align: center;
+  position: relative;
+  padding: 0 1rem 1rem;
+  text-align: left;
+  min-height: 100%;
 }
 
-  /* Additional optional styling for series vs. film cards */
-.seriesCard {
-    /* Styles specific to series */
+.hoverInfo:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -43px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(0deg, #ffffff, #ffffffe0, transparent);
 }
 
-.filmCard {
-    /* Styles specific to films */
-  }
+.hoverInfo h3 {
+  font-size: 1.4em;
+  font-weight: 800;
+  font-family: sans-serif;
+  line-height: 1.1em;
+  margin: 0 auto 0.5rem;
+}
 
-  .showTitle {
-    font-weight: bold;
-    display: block;
-    margin-top: 0.5rem;
+p.synopsis {
+  font-size: 1.1em;
+  border-left: 5px solid #7ac71f;
+  padding-left: 10px;
+  margin: auto;
+}
+
+/* Hover portal container (if additional styling needed) */
+.hoverCardPortal {
+  pointer-events: auto;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1400px) {
+  .showCard {
+    min-width: calc(33% - 15px);
+    width: calc(33% - 15px);
   }
+}
+
+@media (max-width: 1100px) {
+  .showCard {
+    min-width: calc(50% - 15px);
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 580px) {
+  .showCard {
+    min-width: calc(70% - 15px);
+    width: calc(70% - 15px);
+  }
+}
