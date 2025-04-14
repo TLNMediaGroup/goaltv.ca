@@ -108,11 +108,18 @@
   
   /* Tablet: max-width 768px */
   @media (max-width: 768px) {
+    .video-promo {
+      height: fit-content;
+    }
     .desktop-promo {
       display: none;
     }
     .mobile-promo {
       display: block;
+    }
+    .promo-video {
+      height: fit-content;
+      object-fit: contain;
     }
     .promo-overlay h1 {
       font-size: 2.5rem;

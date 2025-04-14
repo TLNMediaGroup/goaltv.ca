@@ -11,42 +11,7 @@ const dictionary = [{
       "Series"
     ],
     "episodic_details": "Episodes: 4, Duration 60mins",
-    "priority": "",
-    "seasons": {
-      "S1": {
-        "TRAILER": "88ztQdgL",
-        "EPISODICS": {
-          "E1": {
-            "title": "The Underdogs",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Fresh from a string of poor pre-tournament performances, Italy kick-start their World Cup out of favour, but advance from the group stage with relative ease.",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/DarkHorses/S1/DH101.webp"
-          },
-          "E2": {
-            "title": "Number 10",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Italy face Australia, coached by Guus Hiddink, the manager who eliminated them in the previous World Cup, before receiving some shocking news ahead of the quarter final.",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/DarkHorses/S1/DH102.webp"
-          },
-          "E3": {
-            "title": "Italy vs. Germany",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "It's a heartbreak for World Cup hosts Germany as Fabio Grosso and Alessandro Del Piero score deep into extra-time to secure Italy a spot in the final.",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/DarkHorses/S1/DH103.webp"
-          },
-          "E4": {
-            "title": "Out of the Blue!",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Italy get their hands on the World Cup as they see off France in a nerve-shredding penalty shootout following Zinedine Zidane's infamous headbutt.",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/DarkHorses/S1/DH104.webp"
-          }
-        }
-      }
-    }
+    "priority": ""
   },
   {
     "_id": "MOMENT OF TRUTH",
@@ -54,7 +19,7 @@ const dictionary = [{
     "tag": "",
     "show_time": "Watch on VIVA Streaming TV",
     "description": "Moment of Truth explores iconic FIFA World Cup stories through players, fans, experts, and psychologists—uncovering what drives greatness, why football captivates billions, and what it reveals about human nature.",
-    "img_URL": "https://www.tln.ca/wp-content/uploads/2022/10/1200-x-800-2.png",
+    "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Soccer/Moment_of_truth_Featured_1200_800.webp",
     "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Soccer/Moment_of_truth_Poster.webp",
     "show_URL": "https://www.tln.ca/shows/moment-of-truth/",
     "trailer": "ytvlxAUP",
@@ -63,84 +28,7 @@ const dictionary = [{
     ],
     "episodic_details": "Documentary Series | Episodes: 10, Duration: 60mins",
     "priority": "",
-    "published": true,
-    "seasons": {
-      "S1": {
-        "TRAILER": "ytvlxAUP",
-        "EPISODICS": {
-          "E1": {
-            "title": "Absolution",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "David Beckham faces a national backlash, Paulo Rossi protests a match fixing scandal, Hope Solo is sidelined by the USA and Ronaldo fights for his life. <br><br> <strong>Featuring: Michael Owen, Marcelo Lippi, Hope Solo, Lilian Thuram, Robert Pires, Marcel Desailly, Bebeto, Cafu.</strong>",
-            "thumbnail": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT101.jpg"
-          },
-          "E2": {
-            "title": "Cunning",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Luis Suarez is the scourge of Africa, Michael Owen confounds Argentina and Claudio Gentile stifles Diego Maradona, four years before the infamous \"Hand of God\". <br><br> <strong>Featuring: Claudio Gentile, Michael Owen, Asamoah Gyan, Osvaldo Ardiles, Marcel Desailly, Felipe Scolari.</strong>",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT102.jpg"
-          },
-          "E3": {
-            "title": "Genius",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Brazil's \"Little Bird\", The Cruyff turn, the majesty of Maradona, Messi and Marta, Beckenbauer's brilliance, a masterclass by Zidane and Pele's poetic misfire. <br><br> <strong>Featuring: Lothar Matthaus, Jorge Burruchaga, Rivellino, Rosana, Edwin Van der Sar, Lilian Thuram, Marcel Desailly.</strong>",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT103.jpg"
-          },
-          "E4": {
-            "title": "Courage",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Franco Baresi and Roger Boucquet defy injury, Christiane Endler takes her country to task, and the truth behind the free kick chaos when Brazil played Zaire. <br><br> <strong>Featuring: Marcelo Lippi, Claudio Gentile, Rivellino, Bebeto, Christiane Endler, Lilian Thuram, Lucas Radebe.</strong>",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT104.jpg"
-          },
-          "E5": {
-            "title": "Inspiration",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Andres Iniesta wears his heart on his shirt, Paul Pogba rallies his teammates, Megan Rapinoe calls out the US President and Salvatore Schillaciseizes the spotlight. <br><br> <strong>Featuring: Andres Iniesta, David Villa, Vicente Del Bosque, Marcelo Lippi, Marcel Desailly, Robert Pires, Lilian Thuram.</strong>",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT105.jpg"
-          },
-          "E6": {
-            "title": "Joy",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Roger Milla delights the crowd, Siphiwe Tshabalala lights up South Africa, Bebeto celebrates fatherhood, and Brandi Chastain and Marco Tardelli seal World Cup glory. <br><br> <strong>Featuring: Lucas Radebe, Asamoah Gyan, Bebeto, Cafu, Felipe Scolari, Hope Solo, Dino Zoff, Claudio Gentile.</strong>",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT106.jpg"
-          },
-          "E7": {
-            "title": "Art",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Robin Van Persie stuns Spain, Fabio Cannavaro shuts out Germany, Diego Maradona baffles Belgium and a beautiful Brazilian team goal, made in Mexico. <br><br> <strong>Featuring: Andres Iniesta, Cafu, Rivellino, Jorge Burruchaga, Manuel Negrete, Carli Lloyd (hopefully), Hope Solo.</strong>",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT107.jpg"
-          },
-          "E8": {
-            "title": "Passion",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Colombia's \"Birdman\", Scotland's Argentine odyssey, South Korean celebrations and Brazilian hearts are broken on home soil. <br><br> <strong>Featuring: Rosana, Felipe Scolari, Bebeto, Cafu, AhnJung Hwan, Archie Gemmill, Guus Hiddink.</strong>",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT108.jpg"
-          },
-          "E9": {
-            "title": "Hope",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Japan shocks the USA, a teenager leads France's front line, Eusebio inspires a Portuguese comeback and Luis Zapata seeks solace for El Salvador. <br><br> <strong>Featuring: Aya Miyama, Marcel Desailly, Lilian Thuram, Robert Pires, Luis Zapata, Kanjana Sung Ngoen, Geoff Hurst.</strong>",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT109.jpg"
-          },
-          "E10": {
-            "title": "Wisdom",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "Bruno Metsu exposes French flaws, Roberto Martinez out manoeuvres Brazil, Vicente Del Bosque maintains Spanish composure and opposite approaches prove decisive for Argentina. <br><br> <strong>Featuring: Vicente Del Bosque, Marcelo Lippi, Roberto Martinez, Lothar Matthaus, Jorge Burruchaga, Geoff Hurst.</strong>",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/MomentOfTruth/S1/MOT110.jpg"
-          }
-        }
-      }
-    }
+    "published": true
   },
   {
     "_id": "ITALIA 90",
@@ -157,35 +45,7 @@ const dictionary = [{
     ],
     "episodic_details": "Episodes: 3, Duration 60mins",
     "priority": "",
-    "published": true,
-    "seasons": {
-      "S1": {
-        "TRAILER": "hvCPGKrd",
-        "EPISODICS": {
-          "E1": {
-            "title": "",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "It's the eve of Italia 90. With a reputation for hooliganism, all eyes are on the England fans. But how did it come to this? A look back at Thatcher's 80s and football's darkest years.",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/Italia90/S1/I901.webp"
-          },
-          "E2": {
-            "title": "",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "As the England team progress through the rounds, their fate is in the balance on and off the pitch, with undercover British police hiding in plain sight.",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/Italia90/S1/I902.webp"
-          },
-          "E3": {
-            "title": "",
-            "showTime": "",
-            "showInfo": "",
-            "synopsis": "As players and fans head for the Italian mainland, can World in Motion, Platt's goal, and Gazza's tears change English football's reputation and help the beautiful game?",
-            "thumbnail": "https://tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/Italia90/S1/I903.webp"
-          }
-        }
-      }
-    }
+    "published": true
   },
   {
     "_id": "SERIE A CHAMPIONS OF MADE IN ITALY",
@@ -199,43 +59,7 @@ const dictionary = [{
     "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Posters/Champions_made_in_italy_poster_800x1200.webp",
     "show_URL": "https://www.tln.ca/shows/serie-a-champions-of-made-in-italy/",
     "priority": "",
-    "published": true,
-    "seasons": {
-      "S2": {
-        "TRAILER": "",
-        "THUMBNAIL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/SerieAChampionsofMadeinItaly/S2/champions_made_in_italy_featured_1920x1080.webp?v",
-        "EPISODICS": {
-          "E1": {
-            "title": "Discovering Lecce | Nikola Krstovic",
-            "showTime": "Sunday, April 27 at 11A",
-            "synopsis": "The Montenegrin striker made the move to Lecce in 2023 after making his dream of playing in the Champions League come true while donning the shirt of Red Star. Now, Nikola has ticked another item off his bucket list by debuting in Serie A with the Salentini and he’s loving life in Puglia.",
-            "thumbnail": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/SerieAChampionsofMadeinItaly/S2/Discovering_Lecce_Nikola_Krstovic_E1.jpg",
-            "trailer": "2j8lfgeQ"
-          },
-          "E2": {
-            "title": "Discovering Firenze | Robin Gosens",
-            "showTime": "Sunday, April 27 at 11:15A",
-            "synopsis": "The German recounts his first steps in the world of professional football and his journey in the Italian top division. After one year in Florence, the wingback has learned much about the local culture and with his newly-acquired knowledge, talks about the similarities between competing at the highest level and producing one the finest wines in the country.",
-            "thumbnail": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/SerieAChampionsofMadeinItaly/S2/Discovering_Firenze_Robin_Gosens_E2.jpg",
-            "trailer": "P2HjQTuD"
-          },
-          "E3": {
-            "title": "Discovering Cagliari | Yerry Mina",
-            "showTime": "Sunday, April 27 at 11:30A",
-            "synopsis": "The Colombian arrived in Cagliari at a difficult time in his career. Hampered by injuries and lacking regular playing time, the towering defender’s relationship with then-coach Claudio Ranieri immediately took off and Mina became a pillar in the dressing room and on the pitch for the Rossoblù.",
-            "thumbnail": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/SerieAChampionsofMadeinItaly/S2/Discovering_Firenze_Robin_Gosens_E3.jpg",
-            "trailer": "4opovB6L"
-          },
-          "E4": {
-            "title": "Discovering Bologna | Riccardo Orsolini",
-            "thumbnail": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Episodic_Thumbnails/SerieAChampionsofMadeinItaly/S2/Discovering_Bologna_Riccardo_Orsolini_E4.jpg",
-            "trailer": "DJ5hSUSe",
-            "synopsis": "He was born in Ascoli but he became a man in Bologna, the Italian winger recounts his love story with one of most lively and welcoming cities in the Italian peninsula, his journey in the world of professional football and what makes Bologna a unique place.",
-            "showTime": "Sunday, April 27 at 11:45A"
-          }
-        }
-      }
-    }
+    "published": true
   },
   {
     "_id": "SOCCER SHRINES",
@@ -243,8 +67,8 @@ const dictionary = [{
     "tag": "",
     "show_time": "",
     "description": "Soccer Shrines is a 13-part Canadian television documentary series about the most famous soccer stadiums in the world and their fans. Stadiums include Old Trafford (Manchester United F.C., United Kingdom), Allianz Arena (FC Bayern Munich, Germany), Amsterdam Arena (AFC Ajax, Netherlands), Parc des Princes (Paris Saint-Germain F.C., France), Camp Nou (FC Barcelona, Spain), Stade Vélodrome (Olympique de Marseille, France), Celtic Park (Celtic F.C., Scotland), Karaiskakis Stadium (Olympiacos F.C., Greece), San Siro (A.C. Milan, Italy), Emirates Stadium (Arsenal F.C., United Kingdom), Loftus Versfeld Stadium (Kaizer Chiefs F.C., South Africa), Estádio do Maracanã (Flamengo, Brazil), La Bombonera (Boca Juniors, Argentina). ",
-    "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Soccer/King-Otto_Featrued_%281200x800%29.webp",
-    "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Soccer/King_Otto_Poster_%28800x1200%29.webp",
+    "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Soccer/SOCCER_SHRINES_Featured.webp",
+    "poster_URL": "",
     "show_URL": "",
     "trailer": "",
     "category": [
@@ -252,7 +76,7 @@ const dictionary = [{
     ],
     "episodic_details": "",
     "priority": "",
-    "published": true,
+    "published": true
   },
   {
     "_id": "SERIE A: Full Impact",
@@ -325,7 +149,7 @@ const dictionary = [{
   },
   {
     "_id": "THE PAOLO ROSSI STORY",
-    "title": "The Paolo Rossi Story",
+    "title": "The Paolo Rossi Story | E' stato tutto bello - Storia di Paolino e Pablito",
     "tag": "",
     "show_time": "Saturday October 12 at 2P",
     "description": "Paolino Rossi is a skinny boy from a working-class family who spends his time playing football at the local parish youth club. He's a talented player and he is only fourteen when the famous Juventus club picks him to join its ranks. After moving to Turin, where the club is based, his meniscus tears three times in a row, bringing his promising career to a halt right from the start. When he finally begins to play, he finishes the year as a top scorer and goes on to be a protagonist in the World Cup, where a loving crowd calls him by his new nickname Pablito. An unforgettable tournament for Italy and himself, who finishes top scorer and world champion.",
@@ -374,6 +198,66 @@ const dictionary = [{
     "priority": "",
     "published": true,
     "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/Soccer/Heart_of_goal_Poster.webp"
+  },
+  {
+    "_id": "KING VS KING VS KING",
+    "title": "King vs King vs King",
+    "tag": "",
+    "show_time": "",
+    "description": "In King vs King vs King, a wealthy philanthropist is forced to examine her life and come to terms with an aggressive medical condition. Denise King, eccentric billionaire CEO and philanthropist, deals with the aftermath of a cancerous brain tumor diagnosis. Unfortunately, these untimely news come just as her husband runs away with her identical twin sister.",
+    "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/TLN_Originals/King_Vs_king_vs_king_Featured.webp",
+    "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/TLN_Originals/King_Vs_king_vs_king_Poster.webp",
+    "trailer": "",
+    "category": [
+      "TLN Originals"
+    ],
+    "priority": "",
+    "published": true
+  },
+  {
+    "_id": "LUCKY 7 SOCCER CLUB",
+    "title": "Lucky 7 Soccer Club",
+    "tag": "",
+    "show_time": "",
+    "description": "Lucky 7 Soccer Club is a web comedy series that follows a struggling house league soccer team trying to win the new season. An eccentric millionaire leaves a sizeable donation to the town of Woodbridge in her will, with the cruel stipulation that her granddaughter’s team win the championship. The coaches and parents have to whip their kids into perfect shape to win it all in order to save the whole town from financial crisis.",
+    "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/TLN_Originals/Lucky_7_Soccer_Club_Featured.webp",
+    "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/TLN_Originals/Lucky_7_Soccer_Club_Poster.webp",
+    "trailer": "",
+    "category": [
+      "TLN Originals"
+    ],
+    "priority": "",
+    "published": true
+  },
+  {
+    "_id": "MARCO'S DREAM",
+    "title": "Marco’s Dream",
+    "tag": "",
+    "show_time": "",
+    "description": "Marco is a rising young soccer star who dreams of playing in the big leagues. With lofty ambitions, the only thing keeping the arrogant 17-year-old grounded is his dysfunctional Italian family.",
+    "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/TLN_Originals/Marco%27s_Dream_Featured.webp",
+    "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/TLN_Originals/Marco%27s_Dream_Poster.webp",
+    "trailer": "",
+    "category": [
+      "TLN Originals"
+    ],
+    "priority": "",
+    "published": true
+  },
+  {
+    "_id": "CRUZI CONTROL",
+    "title": "Cruzi Control",
+    "tag": "",
+    "show_time": "",
+    "description": "While in the midst of an alleged doping controversy, disgraced women’s hockey coach Rachel Cruise shares her story with her son, Bobby Orr. Bobby, who knows nothing of his mother’s past, is enamored by tales of her immigrant family coming to Canada, and her rise and fall in the world of professional women’s hockey.",
+    "img_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/TLN_Originals/Cruzi_Control_Featured.webp",
+    "poster_URL": "https://www.tln.ca/wp-content/uploads/show-thumbnails/TLN_Originals/Cruzi_Control_Poster.webp",
+    "trailer": "",
+    "category": [
+      "TLN Originals"
+    ],
+    "priority": "",
+    "published": true
   },
   {
     "_id": "1994",

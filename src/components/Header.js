@@ -9,10 +9,15 @@ const Header = () => {
     <header className="header">
       <div className="container">
         {/* Logo Section */}
-        <a href="#home" className="logo">
-            <img src={logo} alt="GoalTV Logo" className="logo-image" />
-        </a>
-
+        <div className="logo wrapper">
+          <a href="" className="logo">
+              <img src={logo} alt="GoalTV Logo" className="logo-image" />
+          </a>
+        </div>
+        <div className="nav-wrapper">
+          <a href="" className="logo">Shows</a>
+          <a href="" className="logo">Subscribe</a>
+        </div>
       </div>
     </header>
   );
