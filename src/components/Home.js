@@ -6,7 +6,10 @@ import DesktopPromo from '../assets/Videos/Channel_Promo/Goal-Header-Desktop.mp4
 import MobilePromo from '../assets/Videos/Channel_Promo/Goal-Header-Mobile.mp4';
 import Carousel from './Carousel';
 import NewsletterSection from './Newsletter';
-
+import BrandDesktop from '../assets/Logos/logo-change-desktop.webp';
+import BrandMobile from '../assets/Logos/logo-change-mobile.webp';
+import RogersDesktop from '../assets/Logos/where-to-watch-desktop.webp';
+import RogersMobile from '../assets/Logos/where-to-watch-desktop.webp';
 const Home = () => {
   return (
     <main className="home">
@@ -22,13 +25,20 @@ const Home = () => {
             <source src={MobilePromo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          {/* <div className="promo-overlay">
-            <h1>Experience the Passion</h1>
-            <p>Welcome to Goal</p>
-          </div> */}
         </div>
       </section>
-
+      {/* Intro Section */}
+        <section className="page-content intro-section">
+        <h2 id="we-speak-soccer-title">WE SPEAK SOCCER</h2>
+        <h2 className="we-speak-soccer-sub-title">A Bolder Identity <br className='mobile'></br>A Renewed Commitment.</h2>
+        <img src={BrandDesktop} alt="Goal Channel Logo" className="brand-change-logo desktop"></img>
+        <img src={BrandMobile} alt="Goal Channel Logo" className="brand-change-logo mobile"></img>
+      </section>
+      {/* Where To Watch Section */}
+      <section className="page-content where-to-watch-section">
+        <img src={RogersDesktop} alt="Rogers Channel Logo" className="channel-logo desktop"></img>
+        <img src={RogersMobile} alt="Rogers Channel Logo" className="channel-logo mobile"></img>
+      </section>
       {/* Series Airing Section */}
       <section className="page-content series-section">
         <h2 className="section-title">Series Airing</h2>
@@ -52,7 +62,6 @@ const Home = () => {
           <Carousel category="TLN Originals" showType="film" />
         </div>
       </section>
-
       {/* Goal Newsletter Section */}
       <NewsletterSection/>
     </main>

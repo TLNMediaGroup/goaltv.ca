@@ -14,10 +14,6 @@ const Header = () => {
               <img src={logo} alt="GoalTV Logo" className="logo-image" />
           </a>
         </div>
-        <div className="nav-wrapper">
-          <a href="" className="logo">Shows</a>
-          <a href="" className="logo">Subscribe</a>
-        </div>
       </div>
     </header>
   );

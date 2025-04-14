@@ -76,7 +76,51 @@
     max-width: 1300px;
     margin: auto;
   }
+  /* ----------------------------------
+     Brand Sections
+  ------------------------------------- */
+  #we-speak-soccer-title {
+    font-size: min(7.3vw, 130px);
+    max-width: 1300px;
+    color: var(--color-primary-dark);
+    margin: auto;
+}
+h2.we-speak-soccer-sub-title {
+  font-size: min(3.2vw, 55px);
+  padding: 1.5rem 0 2rem;
+  max-width: 1300px;
+  color: var(--color-primary-dark);
+  margin: auto;
+}
+  img.brand-change-logo.desktop {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+  }
 
+  /* ----------------------------------
+     Where to Watch Sections
+  ------------------------------------- */
+    /* Where to Watch Section */
+    .where-to-watch {
+      background: linear-gradient(135deg, #ffffff, #f7f7f7);
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      transition: transform 0.3s ease;
+    }
+    .where-to-watch:hover {
+      transform: scale(1.02);
+    }
+    .mobile {
+        display: none;
+    }
+    .channel-logo {
+      width: 40rem;
+      height: auto;
+      margin: auto;
+    }
   /* ----------------------------------
      Animations
   ------------------------------------- */
@@ -132,6 +176,28 @@
     }
     .section-title {
       margin-bottom: 1rem;
+    }
+    img.brand-change-logo.mobile {
+      width: 80%;
+      margin: auto;
+  }
+  #we-speak-soccer-title {
+    font-size: 16vw;
+  }
+  h2.we-speak-soccer-sub-title {
+    font-size: 6vw;
+    padding: 1.5rem 0 2rem;
+    max-width: 1300px;
+    color: var(--color-primary-dark);
+}
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+    .channel-logo {
+      width: 95%;
     }
   }
   

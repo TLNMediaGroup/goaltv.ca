@@ -1,0 +1,10 @@
+input.btn.btn-submit {
+    background: #c7f267 !important;
+    border: 3px none #ffffff;
+    border-radius: 8px;
+    line-height: 1em;
+    padding: 19px 18px;
+    color: #034d37 !important;
+    font-size: 1rem !important;
+    font-weight: 600;
+}

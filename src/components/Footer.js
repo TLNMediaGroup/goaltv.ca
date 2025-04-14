@@ -113,10 +113,10 @@ function Footer() {
                   <a href="/">SUBSCRIBE TODAY</a>
                 </div>
                 <div>
-                  <a href="/">ROGERS | CHANNEL 425</a>
+                  <a href="https://www.rogers.com" target="blank_">ROGERS | CHANNEL 425</a>
                 </div>
                 <div>
-                  <a href="/">WWW.ROGERS.COM</a>
+                  <a href="https://www.rogers.com" target="blank_">WWW.ROGERS.COM</a>
                 </div>
                 <div>
                   <a href="/">1 (888) 764-3771</a>
