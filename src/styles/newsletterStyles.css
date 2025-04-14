@@ -8,7 +8,7 @@
     /* Initial hidden state */
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 0.4s ease-out, transform 0.8s ease-out;
     overflow: hidden;
 }
   
@@ -31,7 +31,7 @@ img.background-logo {
     
     /* Initial downward state */
     transform: translateY(100px);
-    transition: transform 0.8s ease-out;
+    transition: transform 1s ease-out;
 }
   
 /* When the newsletter is active, animate the soccer ball to slide up partially */
@@ -75,4 +75,31 @@ img.background-logo {
 
 .subscribe-btn:hover {
     background-color: var(--color-accent);
+}
+
+
+@media (max-width: 1100px) {
+    .newsletter-container h2 {
+        font-size: 8vw;
+    }
+    img.background-logo {
+        width: 140%;
+        margin: auto -20% auto -20%;
+        max-width: 140%;
+    }
+    .newsletter-logo {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 580px) { 
+    .newsletter-container h2 {
+        font-size: 7vw;
+        letter-spacing: .5rem;
+    }
+    img.background-logo {
+        width: 160%;
+        margin: auto -30% auto -30%;
+        max-width: 160%;
+    }
 }
