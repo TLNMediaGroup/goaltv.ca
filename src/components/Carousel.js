@@ -1,5 +1,3 @@
-// src/components/Carousel.js
-
 import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/carouselStyles.css';
@@ -11,12 +9,10 @@ const HoverCardPortal = ({ children, position }) => {
       className="hoverCardPortal"
       style={{
         position: 'absolute',
-        top: position.centerY,        // position at the vertical center
-        left: position.left,          // adjusted left (card left - extraHorizontal)
-        width: position.width,        // card width plus extra space on each side
-        minHeight: position.minHeight, // ensure a minimum height equal to the card's height
-        height: 'fit-content',        // height will adjust based on content if larger
-        transform: 'translateY(-50%)',// centers the overlay vertically relative to its center
+        top: position.top,
+        left: position.left,
+        width: position.width,
+        height: 'fit-content',
         zIndex: 9999,
       }}
     >
@@ -26,31 +22,43 @@ const HoverCardPortal = ({ children, position }) => {
   );
 };
 
-const ShowCard = ({ show, showType }) => {
+const ShowCard = ({ show, showType, onShowClick }) => {
   const cardRef = useRef(null);
   const [hoverPosition, setHoverPosition] = useState(null);
   const [showHover, setShowHover] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  // Extra horizontal space: 30px each side.
   const extraHorizontal = 30;
 
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const handleMouseEnter = () => {
-    if (cardRef.current) {
+    if (!isMobile && cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect();
-      const centerY = rect.top + window.pageYOffset + rect.height / 2;
-      // Capture the height of the card as minHeight for the overlay.
       setHoverPosition({
-        centerY, // vertical center of the card
+        top: rect.top + window.pageYOffset,
         left: rect.left + window.pageXOffset - extraHorizontal,
         width: rect.width + extraHorizontal * 2,
         minHeight: rect.height,
       });
+      setShowHover(true);
     }
-    setShowHover(true);
   };
 
   const handleMouseLeave = () => {
-    setShowHover(false);
+    if (!isMobile) {
+      setShowHover(false);
+    }
+  };
+
+  const handleClick = () => {
+    if (isMobile) {
+      onShowClick(show);
+    }
   };
 
   const cardClass = showType === 'series' ? 'showCard seriesCard' : 'showCard filmCard';
@@ -62,24 +70,21 @@ const ShowCard = ({ show, showType }) => {
       ref={cardRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
     >
       <img src={imageSource} alt={show.title} className="showCardImage" />
-      {showHover && hoverPosition && (
+      {!isMobile && showHover && hoverPosition && (
         <HoverCardPortal position={hoverPosition}>
           <div className="hoverCard" style={{ width: '100%', height: '100%' }}>
             <img
               src={show.img_URL}
               alt={`${show.title} overlay`}
               className="hoverImage"
-              style={{ 
-                width: '100%',
-                height: showType === 'series' ? '160px' : '100%',
-                objectFit: 'cover',
-              }}
+              style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
             />
             <div className="hoverInfo">
               <h3>{show.title}</h3>
-              <p className="synopsis">{show.description}</p>
+              <Synopsis synopsis={show.description} />
             </div>
           </div>
         </HoverCardPortal>
@@ -88,14 +93,36 @@ const ShowCard = ({ show, showType }) => {
   );
 };
 
+const Synopsis = ({ synopsis }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const maxLength = 240;
 
+  const toggleReadMore = () => {
+    setIsExpanded(prev => !prev);
+  };
 
-/**
- * Carousel component renders a horizontal scrolling collection of shows.
- */
-const Carousel = ({ category, showType, season }) => {
+  const shouldTruncate = synopsis.length > maxLength;
+
+  const displayText = isExpanded || !shouldTruncate
+    ? synopsis
+    : synopsis.substring(0, maxLength) + '...';
+
+  return (
+    <p className="synopsis">
+      {displayText}
+      {shouldTruncate && (
+        <span className="read-more" onClick={toggleReadMore}>
+          {isExpanded ? ' Show Less' : ' Read More'}
+        </span>
+      )}
+    </p>
+  );
+};
+
+const Carousel = ({ category, showType }) => {
   const [showsMap, setShowsMap] = useState(new Map());
   const collectionRef = useRef(null);
+  const [selectedShow, setSelectedShow] = useState(null);
 
   useEffect(() => {
     if (!Array.isArray(dictionaryData)) {
@@ -109,7 +136,6 @@ const Carousel = ({ category, showType, season }) => {
     setShowsMap(map);
   }, []);
 
-  // Filter shows based on the provided category.
   const filteredShows = Array.from(showsMap.values()).filter(show =>
     show.category && show.category.includes(category)
   );
@@ -120,9 +146,8 @@ const Carousel = ({ category, showType, season }) => {
     const visibleWidth = container.clientWidth;
     const maxScrollLeft = container.scrollWidth - visibleWidth;
     const currentScroll = container.scrollLeft;
-    const tolerance = 5; // pixels tolerance
-  
-    // If we're within `tolerance` pixels of the maximum, loop to the beginning.
+    const tolerance = 5;
+
     if (currentScroll >= maxScrollLeft - tolerance) {
       container.scrollTo({ left: 0, behavior: 'smooth' });
     } else {
@@ -131,15 +156,14 @@ const Carousel = ({ category, showType, season }) => {
       container.scrollBy({ left: scrollByAmount, behavior: 'smooth' });
     }
   };
-  
+
   const handlePrev = () => {
     const container = collectionRef.current;
     if (!container) return;
     const visibleWidth = container.clientWidth;
     const currentScroll = container.scrollLeft;
-    const tolerance = 5; // pixels tolerance
-  
-    // If we're at or within `tolerance` of 0, loop to the end.
+    const tolerance = 5;
+
     if (currentScroll <= tolerance) {
       const maxScrollLeft = container.scrollWidth - visibleWidth;
       container.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
@@ -148,30 +172,56 @@ const Carousel = ({ category, showType, season }) => {
       container.scrollBy({ left: -scrollByAmount, behavior: 'smooth' });
     }
   };
-  
-  return (
-    <div className="carousel">
-      {/* Navigation arrows placed outside the scrollable wrapper */}
-      <div className="carousel-btn prev-btn" onClick={handlePrev}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
-          <polygon points="50,10 50,90 0,50" fill="#7ac71f" />
-        </svg>
-      </div>
-      <div className="carousel-btn next-btn" onClick={handleNext}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
-          <polygon points="0,10 0,90 50,50" fill="#7ac71f" />
-        </svg>
-      </div>
 
-      {/* A wrapper that hides overflow, with the scrollable content inside */}
-      <div className="collection-wrapper">
-        <div className="collection" ref={collectionRef}>
-          {filteredShows.map(show => (
-            <ShowCard key={show._id} show={show} showType={showType} />
-          ))}
+  const closeLightbox = () => setSelectedShow(null);
+
+  return (
+    <>
+      <div className="carousel">
+        <div className="carousel-btn prev-btn" onClick={handlePrev}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
+            <polygon points="50,10 50,90 0,50" fill="#7ac71f" />
+          </svg>
+        </div>
+        <div className="carousel-btn next-btn" onClick={handleNext}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
+            <polygon points="0,10 0,90 50,50" fill="#7ac71f" />
+          </svg>
+        </div>
+
+        <div className="collection-wrapper">
+          <div className="collection" ref={collectionRef}>
+            {filteredShows.map(show => (
+              <ShowCard
+                key={show._id}
+                show={show}
+                showType={showType}
+                onShowClick={setSelectedShow}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+
+      {selectedShow &&
+        ReactDOM.createPortal(
+          <div className="mobileLightbox" onClick={closeLightbox}>
+            <div className="modalCard" onClick={(e) => e.stopPropagation()}>
+              <img
+                src={selectedShow.img_URL}
+                alt={`${selectedShow.title} overlay`}
+                className="hoverImage"
+                style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+              />
+              <div className="hoverInfo">
+                <h3>{selectedShow.title}</h3>
+                <Synopsis synopsis={selectedShow.description} />
+              </div>
+            </div>
+          </div>,
+          document.body
+        )}
+    </>
   );
 };
 

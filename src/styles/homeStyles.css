@@ -121,7 +121,10 @@
       font-size: 1.2rem;
     }
     .page-content {
-      padding: 1.5rem;
+      padding: 2rem 1.5rem;
+    }
+    .section-title {
+      margin-bottom: 1rem;
     }
   }
   
